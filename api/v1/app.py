@@ -2,7 +2,7 @@
 """Flask application"""
 
 from os import getenv
-from flask import Flask, make_response, jsonify
+from flask import Flask, jsonify
 from models import storage
 from api.v1.views import app_views
 from flask_cors import CORS
@@ -22,7 +22,7 @@ def teardown_database(self):
 @app.errorhandler(404)
 def page_not_found(self):
     """Page not found error handler"""
-    return make_response(jsonify({"error": "Not found"})), 404
+    return jsonify({"error": "Not found"})
 
 
 if __name__ == "__main__":
