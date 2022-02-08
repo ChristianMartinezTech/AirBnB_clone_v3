@@ -151,7 +151,7 @@ EOF  all  create  destroy  help  quit  show  update
 ```
 
 ## Bugs
-No known bugs at this time.  
+No known bugs at this time.
 
 ## Authors
 Christian Martinez - [github](https://github.com/ChristianMartinezTech) / [Twitter](https://twitter.com/CrismartineE)
